@@ -1,12 +1,9 @@
 /* 1-style.css
-   Task 1: Effortless transitions when scrolling
-   Apply smooth scrolling behavior to the html element
+Task 1: Effortless transitions when scrolling
+Apply smooth scrolling behavior to the html element
 */
 
 html {
   /* Enables smooth scrolling when navigating between anchors */
-  scroll-behavior: smooth;
-
-  /* Improves scrolling experience on iOS devices */
-  -webkit-overflow-scrolling: touch;
+scroll-behavior: smooth;
 }
