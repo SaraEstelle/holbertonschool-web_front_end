@@ -1,0 +1,44 @@
+/* Task 19: Style rows, columns, tagline margin, and footer copyright */
+
+/* Variable pour la marge de la section tagline */
+:root {
+    --section-tagline-margin: 0;
+}
+
+/* Section tagline : utilisation de la variable pour la marge */
+.section-tagline {
+    margin: var(--section-tagline-margin);
+}
+
+/* UL avec classe row : reset margin, padding et style de liste */
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Colonnes 1/3 : largeur 33.33%, float left, padding */
+.col-1-3 {
+    width: 33.33%;
+    float: left;
+    padding: 0.5rem;
+}
+
+/* Colonnes 1/2 : largeur 50%, float left, padding */
+.col-1-2 {
+    width: 50%;
+    float: left;
+    padding: 0.5rem;
+}
+
+/* Footer copyright : pas de margin, taille et couleur définies */
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+/* UL dans le footer : alignement du texte à droite */
+.footer ul {
+    text-align: right;
+}
