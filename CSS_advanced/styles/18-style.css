@@ -1,0 +1,130 @@
+/* Task 18: Style the navbar menu, navigation items, and nav links */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* ...normalize.css minifiée... */
+
+/* Variables globales + variables spécifiques au navbar */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform : uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+
+    /* Variables spécifiques aux items du navbar */
+    --nav-item-font-family: var(--font-family-title); /* famille de police des nav-items */
+    --nav-item-font-weight: var(--font-weight-bold); /* graisse du texte */
+    --nav-item-font-size: var(--font-size-medium); /* taille du texte */
+    --nav-item-letter-spacing: 0.04rem; /* espacement entre les lettres */
+    --nav-item-display: inline-block; /* affichage des nav-items */
+    --nav-item-margin: 0 0 3rem 0; /* marge spécifique du bas */
+    --nav-item-link-hover: var(--color-primary); /* couleur au hover */
+}
+
+/* Box-sizing universel pour tout le site */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Styles globaux */
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body{
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+}
+
+/* Liens et pseudo-classes */
+a:link { color: var(--text-color); text-decoration: none; }
+a:visited { font-style: italic; }
+a:hover { text-decoration: underline; }
+a:active { background-color: var(--color-light-grey); }
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Visually hidden */
+.visually-hidden { display: none; }
+
+/* Section */
+.section { padding: var(--section-padding); }
+.section-header { text-align: var(--section-header-align); padding: var(--section-header-padding); }
+.section-body { padding: var(--section-body-padding); }
+.section-footer { padding: var(--section-footer-padding); text-align: var(--section-footer-align); }
+.section-title { font-family: var(--font-family-title); font-size: var(--font-size-xx-large); font-weight: var(--font-weight-bold); margin: var(--section-title-margin); color: var(--section-title-color); }
+.section-tagline { color: var(--color-primary); font-family: var(--font-family-title); text-transform: var(--section-tagline-transform); font-weight: var(--font-weight-bold); }
+
+/* Container centré */
+.container { width: 960px; margin-left: auto; margin-right: auto; }
+
+/* Card category */
+.card-category { color: var(--color-primary); }
+
+/* Footer global */
+.footer { padding: var(--footer-padding); }
+
+/* Navbar */
+
+/* Menu du navbar flottant à droite */
+.navbar-menu { float: right; }
+
+/* Nav général : pas de marge, pas de padding, texte centré et liste non stylisée */
+.nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+/* Items dans la nav : police, graisse, taille, espacement, display, margin */
+.nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+/* Liens de la nav : display block et padding spécifique */
+.nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+/* Hover sur nav-link : changer la couleur du texte */
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
+}
