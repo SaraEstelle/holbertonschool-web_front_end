@@ -1,0 +1,13 @@
+.section-tagline {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Container: 960px et centré horizontalement */
+.container {
+    width: 960px;        /* largeur fixe */
+    margin-left: auto;   /* centrage automatique */
+    margin-right: auto;  /* centrage automatique */
+}
