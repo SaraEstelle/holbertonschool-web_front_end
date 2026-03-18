@@ -1,0 +1,21 @@
+/* Task 2: Set basic foreground colors and hide visually-hidden elements */
+
+html {
+    /* Enables smooth scrolling */
+    scroll-behavior: smooth;
+}
+
+body, a {
+    /* Set default text color for page and links */
+    color: #161616;
+}
+
+.visually-hidden {
+    /* Completely hide the element */
+    display: none;
+}
+
+.card-category, .section-tagline {
+    /* Highlight important text elements */
+    color: #D73953;
+}
