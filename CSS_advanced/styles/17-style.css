@@ -1,0 +1,26 @@
+/* Sections principales */
+.section {
+    padding: var(--section-padding); /* espace global autour du contenu */
+}
+
+/* Header de la section */
+.section-header {
+    text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+}
+
+/* Body de la section */
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+/* Footer de la section */
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
+
+/* Footer global */
+.footer {
+    padding: var(--footer-padding);
+}
